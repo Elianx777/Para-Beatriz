@@ -3,394 +3,202 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Para la persona más especial del mundo ❤️</title>
-    <!-- Tailwind CSS -->
-    <script src="https://cdn.tailwindcss.com"></script>
-    <!-- FontAwesome Icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
-
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    colors: {
-                        romantic: {
-                            50: '#fff5f5',
-                            100: '#fed7d7',
-                            200: '#fbb6ce',
-                            300: '#f687b3',
-                            400: '#ed64a6',
-                            500: '#e53e3e',
-                            600: '#c53030',
-                            gold: '#dfa649',
-                            cream: '#fffaf0'
-                        }
-                    },
-                    fontFamily: {
-                        cursive: ['Dancing Script', 'cursive'],
-                        sans: ['Poppins', 'sans-serif']
-                    }
-                }
-            }
-        }
-    </script>
-
+    <title>Para Yeidy Beatriz ❤️</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Great+Vibes&display=swap" rel="stylesheet">
     <style>
-        /* Animaciones personalizadas */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
         body {
+            background-color: #0d0d0d;
+            color: #fff;
             font-family: 'Poppins', sans-serif;
-            background: linear-gradient(135deg, #fff5f5 0%, #fed7d7 50%, #fffaf0 100%);
             overflow-x: hidden;
+            text-align: center;
+            padding: 20px;
         }
-
-        .font-cursive {
-            font-family: 'Dancing Script', cursive;
+        h1, h2, .romantic-font {
+            font-family: 'Great Vibes', cursive;
         }
-
-        /* Corazones flotantes */
-        .heart-particle {
-            position: fixed;
-            top: -10%;
-            pointer-events: none;
-            animation: fall linear forwards;
-            z-index: 10;
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
         }
-
-        @keyframes fall {
-            0% {
-                transform: translateY(0) rotate(0deg);
-                opacity: 1;
-            }
-            100% {
-                transform: translateY(105vh) rotate(360deg);
-                opacity: 0;
-            }
+        header {
+            margin-top: 30px;
+            margin-bottom: 40px;
         }
-
-        /* Animación del sobre */
-        .envelope-wrapper {
-            perspective: 1000px;
+        header h1 {
+            font-size: 3.5rem;
+            color: #ff4d6d;
         }
-
-        .envelope {
-            position: relative;
-            transition: transform 0.6s ease-in-out;
-            transform-style: preserve-3d;
+        header p {
+            font-size: 1.2rem;
+            color: #ddd;
         }
-
-        /* Glow romantic button */
-        .btn-glow {
-            box-shadow: 0 0 15px rgba(229, 62, 62, 0.4);
-            transition: all 0.3s ease;
+        .counter-box {
+            background: rgba(255, 77, 109, 0.1);
+            border: 2px solid #ff4d6d;
+            border-radius: 15px;
+            padding: 20px;
+            margin-bottom: 40px;
+            box-shadow: 0 0 20px rgba(255, 77, 109, 0.3);
         }
-        .btn-glow:hover {
-            box-shadow: 0 0 25px rgba(229, 62, 62, 0.7);
-            transform: translateY(-2px);
+        .counter-box h2 {
+            font-size: 2.5rem;
+            color: #ff758c;
+            margin-bottom: 10px;
         }
-
-        /* Glassmorphism */
-        .glass-card {
-            background: rgba(255, 255, 255, 0.75);
-            backdrop-filter: blur(10px);
-            border: 1px solid rgba(255, 255, 255, 0.5);
+        #timer {
+            font-size: 1.3rem;
+            font-weight: 600;
+            color: #fff;
+        }
+        .section-box {
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 15px;
+            padding: 30px;
+            margin-bottom: 30px;
+            text-align: left;
+            border-left: 5px solid #ff4d6d;
+        }
+        .section-box h3 {
+            font-family: 'Great Vibes', cursive;
+            font-size: 2.8rem;
+            color: #ff4d6d;
+            margin-bottom: 15px;
+            text-align: center;
+        }
+        .section-box p {
+            font-size: 1.05rem;
+            line-height: 1.8;
+            color: #eee;
+            margin-bottom: 15px;
+        }
+        .reasons-list {
+            list-style: none;
+            padding: 0;
+        }
+        .reasons-list li {
+            background: rgba(255, 77, 109, 0.15);
+            margin: 10px 0;
+            padding: 15px;
+            border-radius: 8px;
+            font-size: 1.1rem;
+            text-align: center;
+            border: 1px solid rgba(255, 77, 109, 0.3);
+        }
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 15px;
+            margin-top: 20px;
+        }
+        .gallery img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            border-radius: 10px;
+            border: 2px solid #ff4d6d;
+            transition: transform 0.3s;
+        }
+        .gallery img:hover {
+            transform: scale(1.03);
+        }
+        footer {
+            margin-top: 50px;
+            font-size: 0.9rem;
+            color: #888;
         }
     </style>
 </head>
-<body class="text-gray-800 antialiased relative selection:bg-rose-200">
+<body>
 
-    <!-- Canvas para efecto de Partículas / Corazones -->
-    <div id="heart-container" class="fixed inset-0 pointer-events-none z-10 overflow-hidden"></div>
+    <div class="container">
+        <!-- Encabezado -->
+        <header>
+            <h1>Yeidy Beatriz Silvestre Mazara ❤️</h1>
+            <p>Eres el amor de mi vida</p>
+        </header>
 
-    <!-- Reproductor de Música Flotante / Fijo -->
-    <div class="fixed top-4 right-4 z-50">
-        <div class="glass-card px-4 py-2 rounded-full shadow-lg flex items-center space-x-3 border border-rose-200">
-            <button id="music-btn" onclick="toggleMusic()" class="w-10 h-10 rounded-full bg-rose-500 text-white flex items-center justify-center shadow-md hover:bg-rose-600 transition">
-                <i id="music-icon" class="fas fa-music animate-spin-slow"></i>
-            </button>
-            <div class="text-xs">
-                <p id="music-title" class="font-semibold text-rose-700">Nuestra Canción 💕</p>
-                <p id="music-status" class="text-gray-500">Haz clic para sonar</p>
+        <!-- Contador de tiempo -->
+        <div class="counter-box">
+            <h2>Nuestro Tiempo Juntos</h2>
+            <div id="timer">Cargando tiempo...</div>
+        </div>
+
+        <!-- Carta Principal -->
+        <div class="section-box">
+            <h3>Para ti, mi amor...</h3>
+            <p>¡Quién iba a imaginar que tendríamos un amor tan lindo, tan puro, tan genuino, tan nosotros! Cuando antes nunca tuvimos un acercamiento, no éramos amigos, no nos conocíamos como tal... Pasé un poco más de 17 años de mi vida fuera de la tuya, y hoy en día no quiero estar lejos de ti ni por un segundo. En todo este tiempo que llevamos juntos (el cual, por cierto, no es nada para todo lo que quiero contigo) debo decir que he aprendido mucho, tanto de ti como de mí mismo.</p>
+            <p>Hemos tenido muchas altas y muchas bajas; no todo ha sido color de rosa, pero nuestro amor siempre ha sido real. Al momento de escribirte esto no dejo de pensar en cómo ha sido todo desde que te conocí: tan solo era un adolescente en ese entonces y ahora, poco a poco, me estoy convirtiendo en un hombre. Un hombre que quiere crecer a tu lado y tratarte siempre como la reina que eres; siempre amarte, anhelarte y desear todo contigo, porque eso es lo que mi corazón siente cuando pienso en ti.</p>
+            <p>Como ya dije, no todo ha sido fácil. Hemos tenido momentos no muy buenos y conversaciones difíciles que, cuando me detengo a pensar, siento que han forjado un amor muy fuerte por ti. Apenas estamos comenzando a vivir, aún somos jóvenes con un futuro que no tenemos del todo definido, pero quiero que sepas que a mis 21 años ya tengo más que claro que todo lo que quiero, lo quiero contigo, mi amor.</p>
+        </div>
+
+        <!-- Razones por las que la amas -->
+        <div class="section-box">
+            <h3>Razones por las que te amo</h3>
+            <ul class="reasons-list">
+                <li>✨ Tu sonrisa y tu forma de ser.</li>
+                <li>✨ Lo bonito que me haces sentir.</li>
+                <li>✨ Tus curvas que me vuelven loco.</li>
+                <li>✨ La forma tan bonita de demostrarme tu amor y lo genuina que eres.</li>
+                <li>✨ Tu forma de ser conmigo y la manera en la que ves nuestro amor.</li>
+                <li>✨ La manera en la que me cuidas y me respetas.</li>
+                <li>✨ Lo diferente que eres y por cómo piensas sobre nosotros.</li>
+                <li>❤️ Porque quiero todo contigo, por siempre.</li>
+            </ul>
+        </div>
+
+        <!-- Recuerdos / Línea de tiempo -->
+        <div class="section-box">
+            <h3>Nuestros Recuerdos Inolvidables</h3>
+            <p>• Los viajes en los que siempre pensabas en mí.</p>
+            <p>• Los días tan bonitos que pasamos en nuestra primera navidad, nuestra noche buena y año nuevo.</p>
+            <p>• Esa noche mágica del 9 de enero del 2023.</p>
+            <p>• Lo bien que me hiciste sentir en mi cumpleaños (14 de febrero).</p>
+            <p>• El rato tan agradable que pasamos en el de ella, lo lindo que se sintió nuestro primer aniversario...</p>
+        </div>
+
+        <!-- Sección de Fotos -->
+        <div class="section-box">
+            <h3>Nuestros Momentos Juntos</h3>
+            <div class="gallery">
+                <img src="IMG_0111.JPG.jpg" alt="Recuerdo juntos">
+                <img src="IMG_0943.jpg" alt="Recuerdo juntos">
+                <img src="IMG_2002_JPG.jpg" alt="Recuerdo juntos">
+                <img src="IMG_3494.JPG.jpg" alt="Recuerdo juntos">
+                <img src="IMG_6009.JPG.jpg" alt="Recuerdo juntos">
             </div>
         </div>
-        <!-- Audio de fondo (Puedes cambiar la URL por el mp3 que desees) -->
-        <audio id="bg-music" loop>
-            <source src="https://cdn.pixabay.com/download/audio/2022/05/27/audio_1808fbf07a.mp3?filename=romantic-piano-112199.mp3" type="audio/mpeg">
-        </audio>
+
+        <footer>
+            Hecho con todo el corazón para Yeidy Beatriz ❤️
+        </footer>
     </div>
 
-    <!-- PORTADA / HERO SECTION -->
-    <section id="hero" class="min-h-screen flex flex-col items-center justify-center text-center p-6 relative z-20">
-        <div class="max-w-2xl mx-auto space-y-6">
-            <span class="inline-block px-4 py-1.5 rounded-full bg-rose-100 text-rose-600 text-sm font-medium tracking-wide shadow-sm animate-bounce">
-                ✨ Para el amor de mi vida ✨
-            </span>
-            <h1 class="text-5xl md:text-7xl font-bold font-cursive text-rose-600 drop-shadow-sm leading-tight">
-                Nuestra Historia de Amor
-            </h1>
-            <p class="text-gray-600 text-base md:text-lg max-w-lg mx-auto">
-                Diseñé este pequeño rincón en internet solo para ti, para recordar cada momento especial que hemos construido juntos.
-            </p>
-            <div class="pt-4">
-                <a href="#contador" class="btn-glow inline-flex items-center space-x-2 bg-gradient-to-r from-rose-500 to-pink-500 text-white font-semibold px-8 py-4 rounded-full text-lg shadow-xl hover:opacity-95 transition cursor-pointer">
-                    <span>Descubrir nuestra sorpresa</span>
-                    <i class="fas fa-heart text-yellow-300"></i>
-                </a>
-            </div>
-        </div>
-        
-        <!-- Indicador para desplazar abajo -->
-        <div class="absolute bottom-6 left-1/2 transform -translate-x-1/2 text-rose-400 animate-bounce">
-            <i class="fas fa-chevron-down text-2xl"></i>
-        </div>
-    </section>
-
-    <!-- CONTADOR DE TIEMPO JUNTOS -->
-    <section id="contador" class="py-16 px-4 z-20 relative">
-        <div class="max-w-4xl mx-auto text-center">
-            <h2 class="text-3xl md:text-4xl font-bold font-cursive text-rose-700 mb-2">Llevamos juntos...</h2>
-            <p class="text-gray-600 mb-8">Cada segundo a tu lado ha sido el mejor regalo de mi vida.</p>
-            
-            <!-- TARJETAS DEL CONTADOR -->
-            <!-- ⚠️ NOTA: Ajusta la fecha de inicio en el script de abajo (variable FECHA_INICIO) -->
-            <div class="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-2xl mx-auto">
-                <div class="glass-card p-4 rounded-2xl shadow-md border-t-4 border-rose-400">
-                    <span id="days" class="block text-3xl md:text-4xl font-bold text-rose-600">00</span>
-                    <span class="text-xs md:text-sm text-gray-500 uppercase tracking-wider">Días</span>
-                </div>
-                <div class="glass-card p-4 rounded-2xl shadow-md border-t-4 border-rose-400">
-                    <span id="hours" class="block text-3xl md:text-4xl font-bold text-rose-600">00</span>
-                    <span class="text-xs md:text-sm text-gray-500 uppercase tracking-wider">Horas</span>
-                </div>
-                <div class="glass-card p-4 rounded-2xl shadow-md border-t-4 border-rose-400">
-                    <span id="minutes" class="block text-3xl md:text-4xl font-bold text-rose-600">00</span>
-                    <span class="text-xs md:text-sm text-gray-500 uppercase tracking-wider">Minutos</span>
-                </div>
-                <div class="glass-card p-4 rounded-2xl shadow-md border-t-4 border-rose-400">
-                    <span id="seconds" class="block text-3xl md:text-4xl font-bold text-rose-600">00</span>
-                    <span class="text-xs md:text-sm text-gray-500 uppercase tracking-wider">Segundos</span>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- CARTA DE AMOR INTERACTIVA -->
-    <section class="py-16 px-4 z-20 relative">
-        <div class="max-w-3xl mx-auto text-center">
-            <h2 class="text-3xl md:text-4xl font-bold font-cursive text-rose-700 mb-6">Tengo una carta para ti</h2>
-            
-            <!-- Contenedor Carta/Sobre -->
-            <div id="envelope-card" class="glass-card rounded-3xl p-6 md:p-10 shadow-2xl relative border border-rose-100 max-w-xl mx-auto transition-all duration-500">
-                <div id="letter-closed" class="space-y-4 py-8">
-                    <div class="w-20 h-20 bg-rose-100 text-rose-500 rounded-full flex items-center justify-center mx-auto text-3xl shadow-inner">
-                        <i class="fas fa-envelope-open-text"></i>
-                    </div>
-                    <h3 class="text-xl font-semibold text-gray-700">Haz clic para abrir tu carta</h3>
-                    <button onclick="openLetter()" class="btn-glow bg-rose-500 hover:bg-rose-600 text-white font-medium px-6 py-2.5 rounded-full transition">
-                        Abrir Carta 💌
-                    </button>
-                </div>
-
-                <div id="letter-open" class="hidden text-left space-y-4">
-                    <div class="flex justify-between items-center border-b border-rose-100 pb-3">
-                        <span class="font-cursive text-2xl text-rose-600">Mi amor,</span>
-                        <i class="fas fa-heart text-rose-400"></i>
-                    </div>
-                    <!-- CONTENIDO DE LA CARTA: Puedes cambiar este texto -->
-                    <p class="text-gray-700 leading-relaxed text-sm md:text-base">
-                        Desde que llegaste a mi vida, todo se volvió más brillante y hermoso. Tu sonrisa ilumina mis días más oscuros y tu forma de ser me enamora cada día un poco más.
-                    </p>
-                    <p class="text-gray-700 leading-relaxed text-sm md:text-base">
-                        Gracias por cada risa compartida, por los abrazos sinceros y por enseñarme lo bonito que es amar y ser amado. Esta página es un pequeño detalle para recordarte lo increíble e importante que eres para mí.
-                    </p>
-                    <p class="text-right font-cursive text-2xl text-rose-600 pt-4">
-                        Por siempre tuyo/a ❤️
-                    </p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- LÍNEA DE TIEMPO / RECUERDOS -->
-    <section class="py-16 px-4 z-20 relative">
-        <div class="max-w-4xl mx-auto">
-            <h2 class="text-3xl md:text-4xl font-bold font-cursive text-center text-rose-700 mb-3">Nuestros Momentos Especiales</h2>
-            <p class="text-gray-600 text-center mb-12">Un pequeño viaje por algunos de los mejores días de nuestra vida.</p>
-
-            <div class="space-y-8 relative before:absolute before:inset-0 before:left-1/2 before:-translate-x-1/2 before:w-0.5 before:bg-rose-200">
-                
-                <!-- Momento 1 -->
-                <div class="relative flex flex-col md:flex-row items-center justify-between group">
-                    <div class="w-full md:w-5/12 mb-4 md:mb-0">
-                        <div class="glass-card p-5 rounded-2xl shadow-md border border-white hover:scale-105 transition transform">
-                            <span class="text-xs font-bold text-rose-500 uppercase tracking-wider">El Inicio</span>
-                            <h3 class="text-lg font-bold text-gray-800 mt-1">El día que nos conocimos</h3>
-                            <p class="text-xs text-gray-400 mb-2">📅 Fecha especial</p>
-                            <!-- Foto de ejemplo -->
-                            <img src="https://images.unsplash.com/photo-1516589178581-6cd7833ae3b2?auto=format&fit=crop&w=600&q=80" alt="Recuerdo 1" class="w-full h-40 object-cover rounded-xl mb-2">
-                            <p class="text-sm text-gray-600">Aún recuerdo la primera vez que te vi. Supe desde ese instante que serías alguien completamente inolvidable.</p>
-                        </div>
-                    </div>
-                    <div class="z-10 w-8 h-8 rounded-full bg-rose-500 text-white flex items-center justify-center shadow">
-                        <i class="fas fa-star text-xs"></i>
-                    </div>
-                    <div class="w-full md:w-5/12"></div>
-                </div>
-
-                <!-- Momento 2 -->
-                <div class="relative flex flex-col md:flex-row-reverse items-center justify-between group">
-                    <div class="w-full md:w-5/12 mb-4 md:mb-0">
-                        <div class="glass-card p-5 rounded-2xl shadow-md border border-white hover:scale-105 transition transform">
-                            <span class="text-xs font-bold text-rose-500 uppercase tracking-wider">Primera Cita</span>
-                            <h3 class="text-lg font-bold text-gray-800 mt-1">Nuestra primera salida juntos</h3>
-                            <p class="text-xs text-gray-400 mb-2">📅 Otra fecha mágica</p>
-                            <img src="https://images.unsplash.com/photo-1522673607200-164d1b6ce486?auto=format&fit=crop&w=600&q=80" alt="Recuerdo 2" class="w-full h-40 object-cover rounded-xl mb-2">
-                            <p class="text-sm text-gray-600">Esas horas pasaron volando entre risas, miradas y nervios. Todo fue perfecto.</p>
-                        </div>
-                    </div>
-                    <div class="z-10 w-8 h-8 rounded-full bg-rose-500 text-white flex items-center justify-center shadow">
-                        <i class="fas fa-heart text-xs"></i>
-                    </div>
-                    <div class="w-full md:w-5/12"></div>
-                </div>
-
-                <!-- Momento 3 -->
-                <div class="relative flex flex-col md:flex-row items-center justify-between group">
-                    <div class="w-full md:w-5/12 mb-4 md:mb-0">
-                        <div class="glass-card p-5 rounded-2xl shadow-md border border-white hover:scale-105 transition transform">
-                            <span class="text-xs font-bold text-rose-500 uppercase tracking-wider">Hoy & Siempre</span>
-                            <h3 class="text-lg font-bold text-gray-800 mt-1">Construyendo nuestro futuro</h3>
-                            <p class="text-xs text-gray-400 mb-2">📅 Hoy</p>
-                            <img src="https://images.unsplash.com/photo-1518199266791-5375a83190b7?auto=format&fit=crop&w=600&q=80" alt="Recuerdo 3" class="w-full h-40 object-cover rounded-xl mb-2">
-                            <p class="text-sm text-gray-600">Cada día a tu lado es una nueva aventura y el comienzo de muchos más recuerdos hermosos.</p>
-                        </div>
-                    </div>
-                    <div class="z-10 w-8 h-8 rounded-full bg-rose-500 text-white flex items-center justify-center shadow">
-                        <i class="fas fa-infinity text-xs"></i>
-                    </div>
-                    <div class="w-full md:w-5/12"></div>
-                </div>
-
-            </div>
-        </div>
-    </section>
-
-    <!-- INTERACTIVO: RAZONES POR LAS QUE TE AMO -->
-    <section class="py-16 px-4 z-20 relative">
-        <div class="max-w-3xl mx-auto text-center">
-            <h2 class="text-3xl md:text-4xl font-bold font-cursive text-rose-700 mb-3">Razones por las que te amo</h2>
-            <p class="text-gray-600 mb-8">Haz clic en el botón para descubrir un motivo especial ❤️</p>
-
-            <div class="glass-card p-8 rounded-3xl shadow-xl border border-rose-100 max-w-lg mx-auto">
-                <div id="reason-display" class="min-h-[100px] flex items-center justify-center text-lg md:text-xl font-medium text-rose-800 transition-all duration-300">
-                    "Haz clic abajo para revelar una razón..."
-                </div>
-                <button onclick="getRandomReason()" class="mt-6 btn-glow bg-gradient-to-r from-rose-500 to-pink-500 text-white font-semibold px-6 py-3 rounded-full shadow-md hover:opacity-90 transition">
-                    Ver otra razón ✨
-                </button>
-            </div>
-        </div>
-    </section>
-
-    <!-- FOOTER FINAL -->
-    <footer class="py-8 text-center text-gray-500 text-sm z-20 relative">
-        <p>Hecho con todo el amor del mundo para ti ❤️</p>
-    </footer>
-
-    <!-- JAVASCRIPT LÓGICA -->
     <script>
-        // 1. FECHA DE INICIO DE LA RELACIÓN (Año, Mes (0-11), Día)
-        // Nota: Los meses van de 0 a 11 (0 = Enero, 1 = Febrero, etc.)
-        const FECHA_INICIO = new Date(2023, 1, 14, 0, 0, 0); // Ejemplo: 14 de Feb de 2023
+        // Fecha de inicio de la relación: 27 de julio de 2022
+        const fechaInicio = new Date("2022-07-27T00:00:00");
 
-        function updateCounter() {
-            const now = new Date();
-            const diff = now - FECHA_INICIO;
+        function actualizarContador() {
+            const ahora = new Date();
+            const diferencia = ahora - fechaInicio;
 
-            const days = Math.floor(diff / (1000 * 60 * 60 * 24));
-            const hours = Math.floor((diff / (1000 * 60 * 60)) % 24);
-            const minutes = Math.floor((diff / 1000 / 60) % 60);
-            const seconds = Math.floor((diff / 1000) % 60);
+            const dias = Math.floor(diferencia / (1000 * 60 * 60 * 24));
+            const horas = Math.floor((diferencia / (1000 * 60 * 60)) % 24);
+            const minutos = Math.floor((diferencia / 1000 / 60) % 60);
+            const segundos = Math.floor((diferencia / 1000) % 60);
 
-            document.getElementById('days').innerText = days < 10 ? '0' + days : days;
-            document.getElementById('hours').innerText = hours < 10 ? '0' + hours : hours;
-            document.getElementById('minutes').innerText = minutes < 10 ? '0' + minutes : minutes;
-            document.getElementById('seconds').innerText = seconds < 10 ? '0' + seconds : seconds;
+            document.getElementById("timer").innerHTML = 
+                `${dias} días, ${horas} horas, ${minutos} minutos y ${segundos} segundos`;
         }
 
-        setInterval(updateCounter, 1000);
-        updateCounter();
-
-        // 2. CARTA INTERACTIVA
-        function openLetter() {
-            document.getElementById('letter-closed').classList.add('hidden');
-            document.getElementById('letter-open').classList.remove('hidden');
-        }
-
-        // 3. REPRODUCTOR DE MÚSICA
-        let isPlaying = false;
-        const music = document.getElementById('bg-music');
-        const musicBtn = document.getElementById('music-btn');
-        const musicIcon = document.getElementById('music-icon');
-        const musicStatus = document.getElementById('music-status');
-
-        function toggleMusic() {
-            if (isPlaying) {
-                music.pause();
-                musicIcon.classList.remove('fa-spin');
-                musicStatus.innerText = "Pausado";
-            } else {
-                music.play();
-                musicIcon.classList.add('fa-spin');
-                musicStatus.innerText = "Reproduciendo ♪";
-            }
-            isPlaying = !isPlaying;
-        }
-
-        // 4. RAZONES POR LAS QUE TE AMO
-        const reasons = [
-            "Por la forma tan hermosa en la que me sonríes cada día.",
-            "Por la bondad y ternura que hay en tu corazón.",
-            "Por hacer de cualquier momento ordinario algo inolvidable.",
-            "Por la paz y calma que siento cuando estoy a tu lado.",
-            "Por tus abrazos que reconfortan todo mi ser.",
-            "Por apoyarme siempre en cada uno de mis sueños.",
-            "Simplemente por ser exactamente tal como eres."
-        ];
-
-        function getRandomReason() {
-            const display = document.getElementById('reason-display');
-            display.style.opacity = '0';
-            setTimeout(() => {
-                const randomIndex = Math.floor(Math.random() * reasons.length);
-                display.innerText = `"${reasons[randomIndex]}"`;
-                display.style.opacity = '1';
-            }, 300);
-        }
-
-        // 5. EFECTO DE CORAZONES CAYENDO
-        function createHeart() {
-            const container = document.getElementById('heart-container');
-            const heart = document.createElement('div');
-            heart.classList.add('heart-particle');
-            
-            // Iconos o emojis variados
-            const items = ['❤️', '💖', '✨', '🌸', '💕'];
-            heart.innerText = items[Math.floor(Math.random() * items.length)];
-
-            heart.style.left = Math.random() * 100 + 'vw';
-            heart.style.animationDuration = Math.random() * 3 + 3 + 's';
-            heart.style.fontSize = Math.random() * 15 + 10 + 'px';
-
-            container.appendChild(heart);
-
-            setTimeout(() => {
-                heart.remove();
-            }, 6000);
-        }
-
-        setInterval(createHeart, 400);
+        setInterval(actualizarContador, 1000);
+        actualizarContador();
     </script>
 </body>
 </html>
